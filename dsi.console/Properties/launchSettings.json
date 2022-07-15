@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DSI.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "-c --CalcCrc=true \"folderNode_0705172428.dsi\""
+    }
+  }
+}

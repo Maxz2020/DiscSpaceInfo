@@ -1,0 +1,44 @@
+ErrorLogFileName = _errorLog.txt
+InfoLogFileName = _log.txt
+
+# Calculate CRC for files
+#Can be used in command line like: --CalcCrc=true or --calccrc=false
+CalcCrc = false
+
+# These directories will not be taken into account when reading file information
+NodeReaderExcludePath = nodeReaderExclude.txt
+
+# Duplicate report settings >>>
+# Minimum file size to search for duplicates, bytes 
+DuplicateReportMinFileLength = 100000
+
+# Duplicate exclude path
+DuplicateReportExcludePath = duplicateReportExclude.txt
+
+# Print duplicate report info footer
+DuplicateReportPrintInfo = true
+
+# Changes report settings >>>
+# Changes exclude path
+ChangesReportExcludePath = changesReportExclude.txt
+
+# Print exclude report info footer
+ChangesReportPrintInfo = true
+
+
+#Example (Paths can be absolute) >>>
+
+# Auto
+#dsi.console.exe -a --CalcCrc=false "d:;e:;c:"
+
+# Duplicate report
+#dsi.console.exe -d "c:;d:;folderNode_0407190939.dsi"
+
+# Changes repord
+#dsi.console.exe -c --CalcCrc=true "folderNode_0705172428.dsi"
+#dsi.console.exe -c "folderNode_0407190939.dsi" "folderNode_0407190939.dsi"
+#dsi.console.exe -c "c:\SomeFolder\Desktop" "folderNode_0407163245.dsi"
+
+# Save directories image
+#dsi.console.exe -s --CalcCrc=true "c:\SomeFolder\Desktop" "c:\SomeFolder\Desktop\123.dsi"
+#dsi.console.exe -s "c:\SomeFolder\Desktop"

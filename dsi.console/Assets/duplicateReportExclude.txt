@@ -1,0 +1,4 @@
+# This is a comment
+.dll
+.exe
+#c:\Windows\
